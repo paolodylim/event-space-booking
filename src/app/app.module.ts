@@ -1,20 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
+
+// router
 import { AppRoutingModule } from './app-routing.module';
+
+// custom components
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BookEventComponent } from './book-event/book-event.component';
 import { BrowseEventSpacesComponent } from './browse-event-spaces/browse-event-spaces.component';
 import { ConfirmBookingComponent } from './confirm-booking/confirm-booking.component';
-import { SiteInfoComponent } from './site-info/site-info.component';
-import { ReserveBookingComponent } from './reserve-booking/reserve-booking.component';
-import { CompleteReservationComponent } from './complete-reservation/complete-reservation.component';
 import { ConfirmReservationComponent } from './confirm-reservation/confirm-reservation.component';
-import { BookingConfirmedComponent } from './booking-confirmed/booking-confirmed.component';
-import { ReservationConfirmedComponent } from './reservation-confirmed/reservation-confirmed.component';
 import { EventSpaceComponent } from './event-space/event-space.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
+import { NavbarComponent } from './navbar/navbar.component';
+// import { LogsComponent } from './logs/logs.component';
+import { EventsComponent } from './events/events.component';
 
 @NgModule({
 	declarations: [
@@ -22,19 +28,22 @@ import { ConfirmationComponent } from './confirmation/confirmation.component';
 		BookEventComponent,
 		BrowseEventSpacesComponent,
 		ConfirmBookingComponent,
-		SiteInfoComponent,
-		ReserveBookingComponent,
-		CompleteReservationComponent,
 		ConfirmReservationComponent,
-		BookingConfirmedComponent,
-		ReservationConfirmedComponent,
 		EventSpaceComponent,
-		ConfirmationComponent
+		ConfirmationComponent,
+		NavbarComponent,
+		// LogsComponent,
+		EventsComponent
 	],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
+		FormsModule,
 		BrowserAnimationsModule,
+		HttpClientModule,
+		HttpClientInMemoryWebApiModule.forRoot(
+			InMemoryDataService, { dataEncapsulation: false }
+		)
 	],
 	providers: [],
 	bootstrap: [AppComponent]

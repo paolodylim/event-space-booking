@@ -8,6 +8,7 @@ import { ConfirmBookingComponent } from './confirm-booking/confirm-booking.compo
 import { EventSpaceComponent } from './event-space/event-space.component';
 import { ConfirmReservationComponent } from './confirm-reservation/confirm-reservation.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
+import { EventsComponent } from './events/events.component';
 
 const routes: Routes = [
 	{ path: '', component: BookEventComponent },
@@ -15,7 +16,8 @@ const routes: Routes = [
 	{ path: 'event-space', component: EventSpaceComponent },
 	{ path: 'confirm-details', component: ConfirmBookingComponent },
 	{ path: 'confirm-reservation', component: ConfirmReservationComponent },
-	{ path: 'confirmation', component: ConfirmationComponent }
+	{ path: 'confirmation', component: ConfirmationComponent },
+	{ path: 'events', component: EventsComponent }
 ];
 
 @NgModule({
