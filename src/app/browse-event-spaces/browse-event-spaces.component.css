@@ -1,0 +1,93 @@
+/* div to update/filter results for event spaces */
+#search-event-space {
+	background-color: #e0e0e0;
+}
+
+/* event spaces for user to browse */
+#event-spaces {
+
+}
+
+.time-btn {
+	margin-top: 2em;
+	margin-left: 1em;
+}
+
+.input {
+	margin-left: 1em;
+}
+
+#num-pax {
+	width: 70px;
+}
+
+.update-btn {
+	margin-top: 2em;
+	height: 39px;
+	margin-left: 1em;
+	justify-content: flex-end;
+}
+
+/* search event space by map visualization */
+#map {
+	background-color: #eeeeee;
+	height: 100vh;
+	overflow-y: hidden
+}
+
+.space-listing {
+	height: 200px;
+	background-color: #fafafa;
+}
+
+.site-info-link {
+	
+}
+.site-photo {
+	background-color: #eee;
+	height: 200px;
+	transform: translate(-1.5em, -1em);
+}
+
+#location-name {
+	font-size: 14pt;
+}
+
+.address {
+	font-size: 10pt;
+	font-weight: 400;
+}
+
+#amenities {
+	position: absolute;
+	bottom: 2em;
+}
+
+.amenity {
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+.amenity-icon {
+	padding-right: .5em;
+}
+
+#price {
+	position: absolute;
+	bottom: 5em;
+	right: .75em;
+}
+
+#book-now-btn {
+	position: absolute;
+	bottom: 1.5em;
+	right: 0em;
+}
+
+.site-info-link {
+	color: inherit;
+}
+
+.site-info-link:hover {
+	text-decoration: none;
+}

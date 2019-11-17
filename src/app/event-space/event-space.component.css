@@ -1,0 +1,52 @@
+#nav-bar {
+	background-color: #e0e0e0;
+	position: absolute;
+	z-index: 100;
+	top: 1em;
+}
+
+#main-pic {	
+	height: 300px;
+}
+
+.pic-div {
+	background-color: #eee;
+	border: 1px solid #e0e0e0;
+}
+
+.sub-pic {
+	height: 75px;
+}
+
+#map {
+	background-color: #eeeeee;
+	width: 100vw;
+	height: 400px;
+}
+
+#price {
+	position: absolute;
+	bottom: 5em;
+	right: .75em;
+}
+
+#book-now-btn {
+	position: absolute;
+	bottom: 1.5em;
+	right: 0em;
+}
+
+.header {
+	width: 100vw;
+}
+
+.amenity {
+	padding-left: .5em;
+	padding-right: .5em;
+	padding-bottom: .5em;
+}
+
+.amenity-icon {
+	padding-right: .5em;
+}
+

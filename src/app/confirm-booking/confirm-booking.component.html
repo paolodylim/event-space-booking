@@ -1,0 +1,160 @@
+<div class="container-fluid px-0">
+
+	<!-- back btn -->
+		<a routerLink="/search-event-spaces">
+			<button class="btn btn-link update-btn m-3" type="button"><i class="fas fa-chevron-left"></i>
+				<span class="pl-2">Back to Search</span>
+			</button>
+		</a>
+
+	<div class="row">
+		<div class="col-4 offset-1">
+			<div id="booking-header" class="booking-info-div">
+				<h3 class="booking-info-text pt-3 pb-2 px-3">Booking Information</h3>
+				<div id="booking-info" class="booking-info-div p-3">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-5">
+								<div class="photo">
+									
+								</div>
+							</div>	
+							<div class="col-sm-7">
+								<h4 id="location-name" class="header">Building/Site Name</h4>
+								<h6 class="address subheader pl-2 pt-1">Address Line 1</h6>
+								<h6 class="address subheader pl-2">Address Line 2</h6>
+								<h6 class="address subheader pb-2 pl-2">City, Province, Zip</h6>
+							</div>	
+						</div>
+					</div>	
+
+					<div class="dropdown-divider"></div>
+					
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-5 py-2">
+								<h4 id="location-name" class="subheader pt-1 d-flex flex-row justify-content-center">01/02/3004</h4>
+							</div>
+							<div class="col-sm-2 py-1">
+								<h6 class="subheader timeslot">
+									<span class="pr-2 pl-2">1:00PM</span>
+								</h6>
+							</div>
+							<div class="col-sm-1 py-2">
+								<i class="fas fa-long-arrow-alt-right pr-2 pl-2"></i>
+							</div>
+							<div class="col-sm-3 py-1">
+								<h6 class="subheader timeslot">
+									<span class="pr-2 pl-2">5:00PM</span>
+								</h6>
+							</div>
+						</div>	
+					</div>	
+
+					<div class="dropdown-divider"></div>
+
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-5 py-2">
+								<h4 id="location-name" class="subheader pt-1 d-flex flex-row justify-content-center">price/hr</h4>
+							</div>
+							<div class="col-sm-7 py-2">
+								<span>&#8369;</span><span class="pl-1">1,500</span><span class="pl-1">/hr</span>
+							</div>
+						</div>	
+					</div>	
+
+					<div class="dropdown-divider"></div>
+
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-5 py-2">
+							</div>
+							<div class="col-sm-3 py-2">
+								<h4 id="location-name" class="subheader pt-1 d-flex flex-row justify-content-center">TOTAL</h4>
+							</div>
+							<div class="col-sm-4 py-1 total">
+								<span>&#8369;</span><span class="pl-1">6,000</span>
+							</div>
+						</div>	
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="col-6">
+			<h3>Ready for your booking confirmation?</h3>
+			<h6>Please enter your details below to finalize your reservation.</h6>
+
+			<h6 class="pt-3">Already an account holder?</h6>
+			<div class="row pt-1 pb-2">	
+			    <div class="col acct-input pr-3">
+			    	<input type="text" class="form-control" placeholder="Username">
+			    </div>
+			    <div class="col acct-input pl-0 pr-3">
+			      	<input type="password" class="form-control" placeholder="Password">
+			    </div>
+			    <div class="col acct-input px-0 pr-3">
+				    <a routerLink="/confirm-reservation">
+				   		<div class="d-flex flex-row justify-content-end pr-5">
+				      		<button class="btn btn-success login-btn" type="button">Login</button>
+				    	</div>
+			    	</a>
+			    </div>
+		  	</div>
+
+			<div class="dropdown-divider"></div>
+			<form class="pr-5">
+				<div class="form-group pt-4">
+				    <label for="work-email">Email</label>
+				    <input type="email" class="form-control" id="work-email" placeholder="my@email.com">
+				</div>
+				<div class="form-group pt-4">
+				    <label for="org-name">Organization Name</label>
+				    <input type="text" class="form-control" id="work-email" placeholder="Organization Name">
+				</div>
+				<div class="row pl-3">
+					<label>Company Representative</label>
+				</div>
+				<div class="row">	
+				    <div class="col">
+				    	<input type="text" class="form-control" placeholder="First name">
+				    </div>
+				    <div class="col">
+				      	<input type="text" class="form-control" placeholder="Last name">
+				    </div>
+			  	</div>
+			  	<div class="d-flex flex-row justify-content-end pt-3">
+				  	<a routerLink="/confirm-reservation">	
+					    <button class="btn btn-primary" type="button">Continue as Guest</button>
+			  		</a>
+			  	</div>
+			  	<div class="container">
+			  		<div class="row pt-3">
+			  			<div class="col-sm-9 pt-1"><div class="dropdown-divider"></div></div>
+			  			<div class="col-sm-2 or"><strong>or</strong></div>
+			  			<div class="col-sm-1 pt-1"><div class="dropdown-divider"></div></div>
+			  		</div>	
+			  	</div>
+		  	</form>
+		  	<form class="pr-3">
+			  	<div class="row pt-3 pr-5">	
+			    	<input type="text" class="form-control" placeholder="Username">
+			  	</div>
+			  	<div class="row pt-3 pr-5">	
+			    	<input type="password" class="form-control" placeholder="Password">
+			  	</div>
+			  	<div class="row pt-3 pr-5">	
+			      	<input type="password" class="form-control" placeholder="Confirm Password">
+			  	</div>
+			  	<div id="continue-btn" class="d-flex flex-row justify-content-end pt-5 pr-5">	
+				    <a routerLink="/confirm-reservation">
+				    	<button class="btn btn-primary" type="button">Continue with Account</button>
+				    </a>
+			  	</div>
+			</form>
+		</div>
+		<div class="col-1">
+		</div>
+	</div>
+</div>

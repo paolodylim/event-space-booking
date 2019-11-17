@@ -1,0 +1,102 @@
+<div class="container-fluid">
+	<div class="row">
+
+		<!-- billboard -->
+		<div id="billboard" class="col-sm">
+			<div class="billboard-text">
+				<h3>Event spaces that work for you</h3>
+				<h6>We offer highly flexible meeting, training and co-working spaces with fully stocked amenities so your team can focus on creating your best work.</h6>
+			</div>
+		</div>
+
+		<!-- book an event form -->
+		<div id="booking-form" class="col-sm">
+			<h5>Book an event space now</h5>
+			<form>
+				<div class="form-group">
+					<label for="date-input">Location</label>
+					<input id="loc-input" type="text" class="form-control">
+				</div>
+
+				<div class="form-group">
+					<label for="date-input">Date</label>
+					<input id="date-input" type="date" class="form-control">
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="d-flex flex-row">
+
+							<!-- # of people -->
+							<div class="form-group">
+								<label for="num-pax"># of People</label>
+								<input id="num-pax" type="number" class="form-control">
+							</div>
+
+							<!-- start time -->
+							<div class="dropdown">
+								<button class="btn btn-light dropdown-toggle time-btn" 
+										type="button" 
+										id="start-time-btn" 
+										data-toggle="dropdown"
+										aria-haspopup="true"
+										aria-expanded="false">Start Time</button>
+								<div class="dropdown-menu" aria-labelledby="start-time-btn">
+									<button class="dropdown-item" type="button">8:00am</button>
+									<button class="dropdown-item" type="button">9:00am</button>
+									<button class="dropdown-item" type="button">10:00am</button>
+									<button class="dropdown-item" type="button">11:00am</button>
+									<button class="dropdown-item" type="button">12:00nn</button>
+									<button class="dropdown-item" type="button">1:00pm</button>
+									<button class="dropdown-item" type="button">2:00pm</button>
+									<button class="dropdown-item" type="button">3:00pm</button>
+									<button class="dropdown-item" type="button">4:00pm</button>
+									<button class="dropdown-item" type="button">5:00pm</button>
+									<button class="dropdown-item" type="button">6:00pm</button>
+									<button class="dropdown-item" type="button">7:00pm</button>
+									<button class="dropdown-item" type="button">8:00pm</button>
+								</div>
+							</div>
+
+							<!-- end time -->
+							<div class="dropdown">
+								<button class="btn btn-light dropdown-toggle time-btn" 
+										type="button" 
+										id="end-time-btn" 
+										data-toggle="dropdown"
+										aria-haspopup="true"
+										aria-expanded="false">End Time</button>
+								<div class="dropdown-menu" aria-labelledby="end-time-btn">
+									<button class="dropdown-item" type="button">8:00am</button>
+									<button class="dropdown-item" type="button">9:00am</button>
+									<button class="dropdown-item" type="button">10:00am</button>
+									<button class="dropdown-item" type="button">11:00am</button>
+									<button class="dropdown-item" type="button">12:00nn</button>
+									<button class="dropdown-item" type="button">1:00pm</button>
+									<button class="dropdown-item" type="button">2:00pm</button>
+									<button class="dropdown-item" type="button">3:00pm</button>
+									<button class="dropdown-item" type="button">4:00pm</button>
+									<button class="dropdown-item" type="button">5:00pm</button>
+									<button class="dropdown-item" type="button">6:00pm</button>
+									<button class="dropdown-item" type="button">7:00pm</button>
+									<button class="dropdown-item" type="button">8:00pm</button>
+									<button class="dropdown-item" type="button">9:00pm</button>
+								</div>
+							</div>	
+
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="d-flex flex-row justify-content-end">
+							<!-- find event space -->
+							<a routerLink="/search-event-spaces">
+								<button class="btn btn-primary book-btn" type="button">Book Event</button>
+							</a>
+						</div>
+					</div>
+				</div>	
+
+			</form>
+		</div>
+	</div>
+</div>

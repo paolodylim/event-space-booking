@@ -1,0 +1,116 @@
+<div class="container-fluid px-0">
+
+	<!-- set event requirements -->
+	<div id="search-event-space" class="d-flex flex-row justify-content-center">	
+		<div class="d-flex flex-row pt-3">
+			<!-- Location -->
+			<div class="form-group">
+				<label for="date-input">Location</label>
+				<input id="loc-input" type="text" class="form-control">
+			</div>
+			<!-- From Date -->
+			<div class="form-group input">
+				<label for="date-input">Date</label>
+				<input id="date-input" type="date" class="form-control">
+			</div>
+			<!-- # of people -->
+			<div class="form-group input">
+				<label for="num-pax"># People</label>
+				<input id="num-pax" type="number" class="form-control">
+			</div>
+			<!-- start time -->
+			<div class="dropdown">
+				<button class="btn btn-light dropdown-toggle time-btn" 
+						type="button" 
+						id="start-time-btn" 
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false">Start Time</button>
+				<div class="dropdown-menu" aria-labelledby="start-time-btn">
+					<button class="dropdown-item" type="button">8:00am</button>
+					<button class="dropdown-item" type="button">9:00am</button>
+					<button class="dropdown-item" type="button">10:00am</button>
+					<button class="dropdown-item" type="button">11:00am</button>
+					<button class="dropdown-item" type="button">12:00nn</button>
+					<button class="dropdown-item" type="button">1:00pm</button>
+					<button class="dropdown-item" type="button">2:00pm</button>
+					<button class="dropdown-item" type="button">3:00pm</button>
+					<button class="dropdown-item" type="button">4:00pm</button>
+					<button class="dropdown-item" type="button">5:00pm</button>
+					<button class="dropdown-item" type="button">6:00pm</button>
+					<button class="dropdown-item" type="button">7:00pm</button>
+					<button class="dropdown-item" type="button">8:00pm</button>
+				</div>
+			</div>
+
+			<!-- end time -->
+			<div class="dropdown">
+				<button class="btn btn-light dropdown-toggle time-btn" 
+						type="button" 
+						id="end-time-btn" 
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false">End Time</button>
+				<div class="dropdown-menu" aria-labelledby="end-time-btn">
+					<button class="dropdown-item" type="button">8:00am</button>
+					<button class="dropdown-item" type="button">9:00am</button>
+					<button class="dropdown-item" type="button">10:00am</button>
+					<button class="dropdown-item" type="button">11:00am</button>
+					<button class="dropdown-item" type="button">12:00nn</button>
+					<button class="dropdown-item" type="button">1:00pm</button>
+					<button class="dropdown-item" type="button">2:00pm</button>
+					<button class="dropdown-item" type="button">3:00pm</button>
+					<button class="dropdown-item" type="button">4:00pm</button>
+					<button class="dropdown-item" type="button">5:00pm</button>
+					<button class="dropdown-item" type="button">6:00pm</button>
+					<button class="dropdown-item" type="button">7:00pm</button>
+					<button class="dropdown-item" type="button">8:00pm</button>
+					<button class="dropdown-item" type="button">9:00pm</button>
+				</div>
+			</div>
+
+			<!-- Update -->
+			<button class="btn btn-warning update-btn" type="button">Update</button>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-8">
+			<div id="event-space-listings" class="pt-3 ">
+				<!-- begin event space listing -->
+				<a routerLink="/event-space" class="site-info-link">
+					<div class="d-flex flex-row pt-3 px-4 mt-2 ml-4 mr-5 space-listing">
+						<div class="col-sm-4 site-photo pt-3 pl-4">photo</div>
+						<div class="col-sm-6">
+							<h4 id="location-name">Building/Site Name</h4>
+							<h6 class="address">Address Line 1</h6>
+							<h6 class="address">Address Line 2</h6>
+							<h6 class="address">City, Province, Zip</h6>
+							<div id="amenities" class="d-flex flex-row">
+								<div class="amenity">
+									<i class="fas fa-users amenity-icon"></i><span>10</span>
+								</div>
+								<div class="amenity">
+									<i class="fas fa-wifi amenity-icon"></i><span>Wifi</span>
+								</div>
+								<div class="amenity">
+									<i class="fas fa-coffee amenity-icon"></i><span>Refreshments</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div id="price"><span>&#8369;</span><span class="pl-1">1,500</span><span class="pl-1">/hr</span></div>
+							<a routerLink="/confirm-details">
+								<button id="book-now-btn" class="btn btn-primary" type="button">Book Now</button>		
+							</a>
+						</div>
+					</div>
+				</a>
+				<!-- end event space listings -->
+			</div>
+		</div>
+		<div id="map" class="d-sm-none d-md-block col-md-4">
+			
+		</div>
+	</div>
+</div>
