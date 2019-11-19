@@ -16,4 +16,6 @@ export class Event {
 	representative: string;
 	email: string;
 	phoneno: number;
+
+	constructor() {}
 }

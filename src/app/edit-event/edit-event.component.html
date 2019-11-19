@@ -1,0 +1,85 @@
+<div class="container">
+	<a routerLink="/events">
+		<button type="button" class="btn btn-dark mt-3 px-4">Back</button>	
+	</a>
+	<div class="row">
+		<div class="col-6 offset-3">
+			<h1>Edit Event</h1>
+				<!-- <app-dynamic-form [questions]="questions"></app-dynamic-form> -->
+
+				<!-- old form -->
+				<div class="form-group">
+					<label for="location">Location</label>
+					<input #location class="form-control" type="text" id="location" placeholder="Unit/Bldg Adress Name" 
+							[(ngModel)]="event.location">
+					<label for="address1">Address 1</label>
+					<input #address1 class="form-control" type="text" id="address1" placeholder="Address Line 1"
+							[(ngModel)]="event.address1">
+					<label for="address2">Address 2</label>
+					<input #address2 class="form-control" type="text" id="address2" placeholder="Address Line 2"
+							[(ngModel)]="event.address2">
+					<label for="address2">City</label>
+					<input #city class="form-control" type="text" id="city" placeholder="City"
+							[(ngModel)]="event.city">
+					<label for="address2">Zip</label>
+					<input #zip class="form-control" type="text" id="zip" placeholder="Zip"
+							[(ngModel)]="event.zip">
+					<label for="address2">Capital</label>
+					<input #capital class="form-control" type="text" id="capital" placeholder="Capital"
+							[(ngModel)]="event.capital">
+					<label for="address2">Date</label>
+					<input #date class="form-control" type="date" id="date"
+							[(ngModel)]="event.date">
+					<label for="start-time">Start Time</label>
+					<input #starttime class="form-control" type="time" id="start-time"
+							[(ngModel)]="event.start">
+					<label for="end-time">End Time</label>
+					<input #endtime class="form-control" type="time" id="end-time"
+							[(ngModel)]="event.end">
+					<label for="orgname">Organization Name</label>
+					<input #orgname class="form-control" type="text" id="location" placeholder="Organization Name"
+							[(ngModel)]="event.orgname">
+					<label for="representative">Representative</label>
+					<input #rep class="form-control" type="text" id="location" placeholder="Representative's Name"
+							[(ngModel)]="event.representative">
+					<label for="email">Email</label>
+					<input #email class="form-control" type="email" id="location" placeholder="Email"
+							[(ngModel)]="event.email">
+					<label for="email">Phone #</label>
+					<input #phoneno class="form-control" type="number" id="location" placeholder="Phone Number"
+							[(ngModel)]="event.phoneno">
+
+					<div class="row justify-content-end p-3">
+						<button type="button" class="btn btn-light px-4 mr-2">Cancel</button>
+						<button (click)="save()" type="button" class="btn btn-success">Update Event</button>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- 
+
+export class Event {
+	id: number;
+
+	location: string;
+	address1: string;
+	address2: string;
+	city: string;
+	zip: number;
+	capital: string;
+
+	date: string;
+	start: string;
+	end: string;
+
+	orgname: string;
+	representative: string;
+	email: string;
+	phoneno: number;
+}
+
+ -->

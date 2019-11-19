@@ -9,6 +9,8 @@ import { EventSpaceComponent } from './event-space/event-space.component';
 import { ConfirmReservationComponent } from './confirm-reservation/confirm-reservation.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { EventsComponent } from './events/events.component';
+import { CreateEventComponent } from './create-event/create-event.component';
+import { EditEventComponent } from './edit-event/edit-event.component';
 
 const routes: Routes = [
 	{ path: '', component: BookEventComponent },
@@ -17,7 +19,9 @@ const routes: Routes = [
 	{ path: 'confirm-details', component: ConfirmBookingComponent },
 	{ path: 'confirm-reservation', component: ConfirmReservationComponent },
 	{ path: 'confirmation', component: ConfirmationComponent },
-	{ path: 'events', component: EventsComponent }
+	{ path: 'events', component: EventsComponent },
+	{ path: 'create-event', component: CreateEventComponent },
+	{ path: 'event/:id', component: EditEventComponent }
 ];
 
 @NgModule({

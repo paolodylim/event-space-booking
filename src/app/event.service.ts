@@ -7,6 +7,9 @@ import { catchError, map, tap } from 'rxjs/operators';
 
 // components
 import { Event } from './event';
+import { Question } from './question'
+import { TextboxQuestion } from './question-textbox'
+import { DropdownQuestion } from './question-dropdown'
 
 // // services
 import { LogService } from './log.service';
@@ -26,7 +29,7 @@ export class EventService {
 
   	getEvents(): Observable<Event[]> {
 		return this.http.get<Event[]>(this.eventsUrl).pipe(
-			tap(_ => this.log('fetched heroes')),
+			tap(data => console.log(data)),
 			catchError(this.handleError<Event[]>('getEvents', []))
 		);
 	} 
@@ -53,29 +56,31 @@ export class EventService {
 
 	updateEvent(event: Event): Observable<any> {
 		return this.http.put(this.eventsUrl, event, this.httpOptions).pipe(
-			tap(_ => this.log(`updated event id=${event.id}`)),
-			catchError(this.handleError<any>('udpateEvent'))
+			tap(data => console.log(`updated event id=${event.id}`)),
+			catchError(this.handleError<any>('updateEvent'))
 		);
 	}
 
-	addEvent(event: Event): Observable<Event> {
+	createEvent(event: Event): Observable<Event> {
+
 		return this.http.post<Event>(this.eventsUrl, event, this.httpOptions).pipe(
-			tap((newEvent: Event) => this.log(`added event w/ id=${newEvent.id}`)),
-			catchError(this.handleError<Event>('addEvent'))
+			tap((newEvent: Event) => console.log(`added event w/ id=${newEvent.id}`)),
+			// tap(data => console.log(data)),
+			catchError(this.handleError<Event>('createEvent'))
 		);
 	}
 
-	deleteEvent(event: Event | number): Observable<Event> {
+	cancelEvent(event: Event | number): Observable<Event> {
 		const id = typeof event === 'number' ? event : event.id;
 		const url = `${this.eventsUrl}/${id}`;
 
 		return this.http.delete<Event>(url, this.httpOptions).pipe(
-			tap(_ => this.log(`deleted event id=${id}`)),
+			tap(data => console.log(`deleted event with id=${id}`)),
 			catchError(this.handleError<Event>('deleteEvent'))
 		);
 	}
 
-	// log hero service messages with message service
+	// log event service messages with message service
 	private log(msg: string) {
 		this.logService.add(`LogService: ${msg}`);
 	}
@@ -95,3 +100,26 @@ export class EventService {
 		}
 	}
 }
+
+
+	/*
+
+	id: number;
+
+	location: string;
+	address1: string;
+	address2: string;
+	city: string;
+	zip: number;
+	capital: string;
+
+	date: string;
+	start: string;
+	end: string;
+
+	orgname: string;
+	representative: string;
+	email: string;
+	phoneno: number;
+
+	*/

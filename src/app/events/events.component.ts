@@ -22,13 +22,29 @@ export class EventsComponent implements OnInit {
 			.subscribe(events => this.events = events);
 	}
 
-	add(representative: string): void {
+	// add event using a representative name
+	/*add(representative: string): void {
 		representative = representative.trim();
 		if(!representative) { return; }
-		this.eventService.addEvent({ representative } as Event)
+		this.eventService.createEvent({ representative } as Event)
 			.subscribe(event => {
 				this.events.push(event);
 			})
+	}*/
+	// create event as object
+	createEvent(event:Event): void {
+		// event = JSON.stringify(event); //event.trim();
+		if(!event) { return; }
+		this.eventService.createEvent(event as Event)
+			.subscribe(event => {
+				this.events.push(event);
+			})
+	}
+
+	cancelEvent(event:Event): void {
+		console.log(event);
+		this.events = this.events.filter(e => e != event);
+		this.eventService.cancelEvent(event).subscribe();
 	}
 
 }

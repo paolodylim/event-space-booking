@@ -11,12 +11,11 @@ export class InMemoryDataService implements InMemoryDataService {
 			{ 	
 				id: 1, 
 				location: 'Unioil Center Building',
-				address1: 'Unit 3C Unioil Center Building',
+				address1: 'Unit 3C / Unioil Center Building',
 				address2: 'Madrigal Business Park, Ayala Alabang',
 				city: 'Muntinlupa',
 				zip: '1770',
 				capital: 'Metro Manila',
-
 
 				date: '11/18/19',
 				start: '6:00am',
@@ -30,7 +29,7 @@ export class InMemoryDataService implements InMemoryDataService {
 			{ 	
 				id: 2, 
 				location: 'Eco Tower',
-				address1: '32nd Street corner 9th Avenue',
+				address1: 'Unit 88A, 32nd Street corner 9th Avenue',
 				address2: 'Bonifacio Global City',
 				city: 'Taguig',
 				zip: '1634',
@@ -48,7 +47,7 @@ export class InMemoryDataService implements InMemoryDataService {
 			},
 			{ 	
 				id: 3, 
-				location: 'Zuellig Building',
+				location: 'Unit 31A, Zuellig Building',
 				address1: 'Makati Avenue',
 				address2: 'cor. Paseo de Roxas',
 				city: 'Makati',

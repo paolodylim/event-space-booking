@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -21,6 +22,12 @@ import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { NavbarComponent } from './navbar/navbar.component';
 // import { LogsComponent } from './logs/logs.component';
 import { EventsComponent } from './events/events.component';
+import { CreateEventComponent } from './create-event/create-event.component';
+
+// dynamic forms
+import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
+import { DynamicFormQuestionComponent } from './dynamic-form-question/dynamic-form-question.component';
+import { EditEventComponent } from './edit-event/edit-event.component'
 
 @NgModule({
 	declarations: [
@@ -33,7 +40,11 @@ import { EventsComponent } from './events/events.component';
 		ConfirmationComponent,
 		NavbarComponent,
 		// LogsComponent,
-		EventsComponent
+		EventsComponent,
+		CreateEventComponent,
+		DynamicFormComponent,
+		DynamicFormQuestionComponent,
+		EditEventComponent
 	],
 	imports: [
 		BrowserModule,
@@ -43,7 +54,8 @@ import { EventsComponent } from './events/events.component';
 		HttpClientModule,
 		HttpClientInMemoryWebApiModule.forRoot(
 			InMemoryDataService, { dataEncapsulation: false }
-		)
+		),
+		ReactiveFormsModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
